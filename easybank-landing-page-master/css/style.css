@@ -11,7 +11,10 @@
     .intro2 {
         display: none;
     }
-    .topnav {
+    .topnav2 {
+        display: none;
+    }
+    .topnav1 {
         position: relative;
         background-color: white;
         display: flex;
@@ -20,7 +23,7 @@
         align-items: center;
         z-index: 1;
     }
-    .topnav a {
+    .topnav1 a {
         float: left;
         color: #00000063;
         text-align: center;
@@ -29,11 +32,11 @@
         font-size: 13px;
         font-weight: bold;
     }
-    .topnav a:hover {
+    .topnav1 a:hover {
         background-color: rgba(221, 221, 221, 0.205);
         color: black;
     }
-    .topnav a.active {
+    .topnav1 a.active {
         border-color: #04AA6D;
         border-bottom-style: solid;
     }

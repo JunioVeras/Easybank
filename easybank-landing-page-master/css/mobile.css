@@ -8,6 +8,9 @@
     .intro1{
         display: none;
     }
+    .topnav1{
+        display: none;
+    }
     .mainmenubtn {
         background-color: rgb(255, 255, 255);
         color: white;
@@ -38,7 +41,7 @@
         top: 40px;
         /* width: 100px; */
     }
-    .topnav {
+    .topnav2 {
         /* width: 100%; */
         display: inline-block;
         position: relative;
@@ -52,7 +55,7 @@
         height: 30px;
         /* top: 20px; */
     }
-    .topnav a {
+    .topnav2 a {
         color: hsla(231, 64%, 6%, 0.774);
         text-align: center;
         padding: 14px 16px;
@@ -60,7 +63,7 @@
         font-size: 13px;
         font-weight: bold;
     }
-    .topnav a:hover {
+    .topnav2 a:hover {
         background-color: rgba(221, 221, 221, 0.205);
         border-radius: 20px;
         color: black;
