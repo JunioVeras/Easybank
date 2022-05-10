@@ -20,6 +20,7 @@
     .dropdown-child {
         display: none;
         /* background-color: skyblue; */
+        left:-100%;
         min-width: 98%;
         background-color: white;
         border-radius: 20px;
@@ -31,7 +32,7 @@
         text-decoration: none;
         display: block;
     }
-    .topnav:hover .dropdown-child {
+    .mainmenubtn:focus .dropdown-child {
         display: block;
         position: absolute;
         top: 40px;
