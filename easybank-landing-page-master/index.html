@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link href="grid/simple-grid.min.css" rel="stylesheet">
   <script defer src="index.js"></script>
 
@@ -15,27 +16,43 @@
 <body>
   <div class="topnav"> 
     <img class="logo" src="images/logo.svg"></img>
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#blog">Blog</a>
-    <a href="#careers">Careers</a>
-    <button class="request" id="r1">Request Invite</button>
+    <button class="mainmenubtn"><img src="images/icon-hamburger.svg"></img></button>
+    <div class="dropdown-child">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#blog">Blog</a>
+      <a href="#careers">Careers</a>
+      <button class="request" id="r1">Request Invite</button>
+    </div>
   </div>
 
-  <div class="intro">
+  <div class="intro1">
     <div class="row">
       <div class="col-6" id="intro-col1">
-      <h1>Next generation <br> digital banking</h1>
+        <h1>Next generation <br> digital banking</h1>
 
-      <p>Take your financial life online. Your Easybank account <br> will be a one-stop-shop 
-      for spending, saving, <br>budgeting, investing, and much more.</p>
+        <p>Take your financial life online. Your Easybank account <br> will be a one-stop-shop 
+        for spending, saving, <br>budgeting, investing, and much more.</p>
 
-      <button class="request" id="r2">Request Invite</button>
+        <button class="request" id="r2">Request Invite</button>
       </div>
       <div class="col-6" id="intro-col2">
-        <img class="background1" src="images/bg-intro-desktop.svg"></img>
-        <img class="cell" src="images/image-mockups.png"></img>
+        <img class="background1" src="images/bg-intro-desktop.svg"><img class="cell" src="images/image-mockups.png"></img></img> 
+      </div>
+    </div>
+  </div>
+  <div class="intro2">
+      <div class="intro-img">
+        <img class="background1" src="images/bg-intro-desktop.svg"><img class="cell" src="images/image-mockups.png"></img></img> 
+      </div>
+      <div class="intro-text">
+        <h1>Next generation <br> digital banking</h1>
+
+        <p>Take your financial life online. Your Easybank account <br> will be a one-stop-shop 
+        for spending, saving, <br>budgeting, investing, and much more.</p>
+
+        <button class="request" id="r2">Request Invite</button>
       </div>
     </div>
   </div>
@@ -76,6 +93,7 @@
 
           <p>Manage your savings, investments, pension, and much more from one account. Tracking 
           your money has never been easier.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -123,35 +141,57 @@
       </div>
     </div>
   </div>
-</body>
-<footer>
-  <div class="footer-cont">
-    <div class="row">
-      <div class="col-3" id="col3"> 
-        <img class="f-icon1" src="images/logo2.svg"></img>
-        <div class="footer-img2">
-          <img class="f-icon2" src="images/icon-facebook.svg"></img>
-          <img class="f-icon3" src="images/icon-youtube.svg"></img>
-          <img class="f-icon4" src="images/icon-twitter.svg"></img>
-          <img class="f-icon5" src="images/icon-pinterest.svg"></img>
-          <img class="f-icon6" src="images/icon-instagram.svg"></img>
+  <footer>
+    <div class="footer-cont">
+      <div class="row">
+        <div class="col-3" id="col3"> 
+          <img class="f-icon1" src="images/logo2.svg"></img>
+          <div class="footer-img2">
+            <img class="f-icon2" src="images/icon-facebook.svg"></img>
+            <img class="f-icon3" src="images/icon-youtube.svg"></img>
+            <img class="f-icon4" src="images/icon-twitter.svg"></img>
+            <img class="f-icon5" src="images/icon-pinterest.svg"></img>
+            <img class="f-icon6" src="images/icon-instagram.svg"></img>
+          </div>
+        </div>
+        <div class="col-2" id="col1">
+          <ul><p>About Us</p></ul>
+          <ul><p>Contact</p></ul>
+          <ul><p>Blog</p></ul>
+        </div>
+        <div class="col-4" id="col4">
+          <ul><p>Careers</p></ul>
+          <ul><p>Support</p></ul>
+          <ul><p>Privacy Policy</p></ul>
+        </div>
+        <div class="col-2" id="col2">
+          <button class="request">Request Invite</button>
+          <t><p>© Easybank. All Rights Reserved</p></t>
         </div>
       </div>
-      <div class="col-2">
-        <ul><p>About Us</p></ul>
-        <ul><p>Contact</p></ul>
-        <ul><p>Blog</p></ul>
+    </div>
+    <div class="footer-cont2"> 
+      <img class="f-icon1" src="images/logo2.svg"></img>
+      <div class="footer-img2">
+        <img class="f-icon2" src="images/icon-facebook.svg"></img>
+        <img class="f-icon3" src="images/icon-youtube.svg"></img>
+        <img class="f-icon4" src="images/icon-twitter.svg"></img>
+        <img class="f-icon5" src="images/icon-pinterest.svg"></img>
+        <img class="f-icon6" src="images/icon-instagram.svg"></img>
       </div>
-      <div class="col-4">
-        <ul><p>Careers</p></ul>
-        <ul><p>Support</p></ul>
-        <ul><p>Privacy Policy</p></ul>
+      <div class="list">
+        <p>About Us</p>
+        <p>Contact</p>
+        <p>Blog</p>
+        <p>Careers</p>
+        <p>Support</p>
+        <p>Privacy Policy</p>
       </div>
-      <div class="col-2" id="col2">
+      <div class="fim">
         <button class="request">Request Invite</button>
         <p>© Easybank. All Rights Reserved</p>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</body>
 </html>

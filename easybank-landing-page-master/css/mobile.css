@@ -1,28 +1,58 @@
-@media only screen and (min-width: 720px) {
+@media only screen and (max-width: 719px){
     html, body{
-        overflow-x: hidden;
+        overflow-x:hidden 
+    } 
+    .footer-cont{
+        display: none;
     }
-    .footer-cont2{
+    .intro1{
         display: none;
     }
     .mainmenubtn {
-        display: none;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        left: 90%;
+        height: 30px;
     }
-    .intro2 {
+    .dropdown-child {
         display: none;
+        /* background-color: skyblue; */
+        min-width: 98%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 1em 10000px rgba(0, 0, 0, 0.336);
+    }
+    .dropdown-child a {
+        /* color: blue; */
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+    }
+    .topnav:hover .dropdown-child {
+        display: block;
+        position: absolute;
+        top: 40px;
+        /* width: 100px; */
     }
     .topnav {
+        /* width: 100%; */
+        display: inline-block;
         position: relative;
         background-color: white;
+        /* overflow: hidden; */
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        z-index: 5;
+        height: 30px;
+        /* top: 20px; */
     }
     .topnav a {
-        float: left;
-        color: #00000063;
+        color: hsla(231, 64%, 6%, 0.774);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -31,20 +61,15 @@
     }
     .topnav a:hover {
         background-color: rgba(221, 221, 221, 0.205);
+        border-radius: 20px;
         color: black;
-    }
-    .topnav a.active {
-        border-color: #04AA6D;
-        border-bottom-style: solid;
     }
     .logo{
         position: absolute;
         left:5%;
     }
     #r1{
-        position: absolute;
-        top: 2px;
-        right:5%;
+        display: none;
     }
     .request{
         cursor: pointer;
@@ -58,83 +83,87 @@
     .request:hover{
         background: linear-gradient(to right, rgba(103, 209, 138, 0.774) , rgba(19, 211, 224, 0.842));
     }
-    .intro1{
+    .intro2{
         background: hsl(0, 0%, 98%);
         z-index: -1;
-        height: 650px;
+        width: 100%;
+        height: 800px;
+        position: relative;
         box-sizing: border-box;
+        text-align: center;
     }
     .background1{
-        position: relative;
+        position: absolute;
         top: -200px;
-        width: 1400px;
-        height: 1000px;
-        right: 100px;
-        /* max-width: 70%; */
-        /* height: auto; */
-        /* right: -600px; */
+        width: 850px;
+        right: -200px;
     }
     .cell{
         position: relative;
-        top: -1100px;
-        right: -100px;
-        width: 800px;
+        top: -120px;
+        right: 00px;
+        width: 500px;
         /* max-width: 90%; */
     }
     body p{
         color:hsl(233, 8%, 62%);
     }
-    .intro1 h1{
+    .intro-text{
         position: relative;
-        top: 50px;
-        left: 5%;
-        font-weight: 400;
-        color:hsla(231, 64%, 6%, 0.774)
+        top: -170px;
+        text-align: center;
+        /* left: 50%; */
     }
-    .intro1 p{
+    .intro2 h1{
         position: relative;
-        top: 35px;
-        left: 5%;
+        /* left: 5%; */
+        font-weight: 400;
+        color:hsla(231, 64%, 6%, 0.774);
+    }
+    .intro2 p{
+        position: relative;
+        /* left: 5%; */
         font-size: 14px;
     }
-    .intro1 button{
+    .intro2 button{
         position: relative;
-        top: 45px;
-        left: 5%;
     }
     .mid{
         z-index: -2;
         background-color: hsl(220, 14%, 96%);
         position: relative;
-        height: 700px;
+        text-align: center;
+        width: 100%;
         top: -30px;
-    }
-    .mid .row{
-        position: absolute;
-        top: 200px;
+        height: auto;
     }
     .mid-init{
-        position: absolute;
-        left: 5%;
+        position: relative;
+        text-align: center;
+        width: 100%;
     }
     .mid-pos{
         position: relative;
-        top: 60px;
+        /* top: 80px; */
+        width: 100%;
     }
+    /* .mid .row{
+        top: 200px;
+    } */
     .end{
         position: relative;
         background: hsl(0, 0%, 98%);
-        z-index: 5;
-        top: -30px;
-        height: 850px;
+        z-index: 3;
+        top: -60px;
+        height: auto;
+        text-align: center;
+        width: 100%;
     }
     .end-init{
-        position: absolute;
-        /* top: 20px; */
-        left: 5%;
+        position: relative;
+        top: 50px;
     }
     #row2{
-        position: absolute;
         top: 100px;
     }
     .fundo{
@@ -147,7 +176,6 @@
         cursor: pointer;
     }
     .end p{
-        /* position: relative; */
         margin: 20px;
     }
     .end img{
@@ -159,35 +187,32 @@
     footer{
         background: hsl(233, 26%, 24%);
         position: relative;
-        /* height: 200px; */
-        top: -60px;
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        height: auto;
     }
-    footer p {
+    footer p{
         color: white;
         font-size: medium;
+        text-align: center;
+        padding: -4px;
+        width: 100%;
+    }
+    .list{
         position: relative;
-        top: 10px;
-    }
-    t p{
-        color: white;
-        font-size: small;
-    }
-    #col2{
-        position: relative;
-        top:40px;
-        text-align: right;
-        font-size: small;
-    }
-    #col3{
-        text-align: center;;
+        text-align: center;
+        top:10px;
     }
     .footer-img2{
         position:relative;
-        top: 68px;
+        top: 30px;
         letter-spacing: 10px;
+        text-align: center;
+        width: 100%;
     }
     .f-icon1{
         position: relative;
-        top: 50px;
+        top: 20px;
     }
 }
